@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>(주)비즈웨어</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./nav-files/style.css" rel="stylesheet" />
+
+    <meta name="robots" content="max-image-preview:large" />
+
+    <link
+      rel="stylesheet"
+      id="font-awesome-css"
+      href="./nav-files/font-awesome.min.css"
+      type="text/css"
+      media="all"
+    />
+    <!--[if lte IE 7]>
+      <link
+        rel="stylesheet"
+        id="font-awesome-ie7-css"
+        href="http://bizw.co.kr/bizw/wp-content/plugins/kboard/font-awesome/css/font-awesome-ie7.min.css?ver=5.1"
+        type="text/css"
+        media="all"
+      />
+    <![endif]-->
+    <script type="text/javascript" id="jquery-core-js-extra"></script>
+    <script
+      type="text/javascript"
+      src="./nav-files/jquery.min.js"
+      id="jquery-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./nav-files/jquery-migrate.min.js"
+      id="jquery-migrate-js"
+    ></script>
+
+    <script src="./nav-files/jquery.min(1).js"></script>
+    <script src="./nav-files/bootstrap.min.js"></script>
+    <script src="./nav-files/jquery.easing.1.3.js"></script>
+    <script src="./nav-files/jquery.smoothwheel.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        jQuery(window).scroll(function () {
+          var scrollTop = jQuery(document).scrollTop();
+          if (scrollTop > 30) {
+            scrollTop = scrollTop - 100; //스크롤링 됐을때 상하 좌표 설정(커질수록 위로)
+            //jQuery("#hpt_nav_conti.cloned").addClass('menu_top_fix')
+            //jQuery("#hpt_nav_conti.original").addClass('gnb_hidden')
+            jQuery(".dropdown-menu").addClass("dropmenu_width150");
+            jQuery("#menu-dh_main_menu-1 > li:last > .dropdown-menu").addClass(
+              "dropmenu_leftm50"
+            );
+          } //if (scrollTop > 70) {jQuery(".hpt_body_left_side").addClass('fix');}
+          if (scrollTop < 29) {
+            scrollTop = 0;
+            //jQuery("#hpt_nav_conti.cloned").removeClass('menu_top_fix')
+            //jQuery("#hpt_nav_conti.original").removeClass('gnb_hidden')
+            jQuery(".dropdown-menu").removeClass("dropmenu_width150");
+            jQuery(
+              "#menu-dh_main_menu-1 > li:last > .dropdown-menu"
+            ).removeClass("dropmenu_leftm50"); //jQuery(".hpt_body_left_side").removeClass('fix');
+          }
+          jQuery(".hpt_body_right_side.hpt_side_fix").stop();
+          jQuery(".hpt_body_right_side.hpt_side_fix").animate(
+            { top: scrollTop },
+            500
+          );
+        });
+        $("#top_logo_conti a.logo_btn").on("click", function () {
+          // 클릭된 요소가 on 클래스이면 즉, 답변이 펼쳐져 있다면.
+          if ($(this).parent().next().is(".nav_openo") == true) {
+            $(this).parent().next().removeClass("nav_openo");
+          } else {
+            $(this).parent().next().addClass("nav_openo");
+          }
+        }); //end click
+      });
+    </script>
+  </head>
+  <body class="chome page_id_34" style="cursor: default">
+    <div id="hpt_nav_conti" class="original">
+      <div id="top_logo_conti">
+        <a class="hpt_main_logo" href="http://bizw.co.kr/" title="(주)비즈웨어"
+          ><img src="./nav-files/toplogo.jpg"
+        /></a>
+        <a href="#" class="logo_btn" title="메인메뉴 오픈"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+      </div>
+      <!--div id = "hpt_nav_conti" class="original" #hpt_nav_conti Start !-->
+      <div class="hpt_nav_inner">
+        <!-- #hpt_nav_inner Start !-->
+        <div class="navbar navbar-static-top">
+          <!-- #navbar Start !-->
+          <div class="container">
+            <button
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navHeaderCollapse"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+              <div class="menu-bizw_main-container">
+                <ul id="menu-bizw_main" class="nav navbar-nav navbar-right">
+                  <li
+                    id="menu-item-48"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-48 dropdown"
+                  >
+                    <a
+                      title="COMPANY"
+                      href="http://bizw.co.kr/#"
+                      data-toggle="dropdown"
+                      class="dropdown-toggle"
+                      aria-haspopup="true"
+                      >COMPANY <span class="caret"></span
+                    ></a>
+                    <ul role="menu" class="dropdown-menu">
+                      <li
+                        id="menu-item-41"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"
+                      >
+                        <a
+                          title="대표인사말"
+                          href="http://bizw.co.kr/%eb%8c%80%ed%91%9c%ec%9d%b8%ec%82%ac%eb%a7%90/"
+                          >대표인사말</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-44"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"
+                      >
+                        <a
+                          title="연혁 및 조직도"
+                          href="http://bizw.co.kr/%ec%97%b0%ed%98%81-%eb%b0%8f-%ec%a1%b0%ec%a7%81%eb%8f%84/"
+                          >연혁 및 조직도</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-45"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"
+                      >
+                        <a
+                          title="사업실적"
+                          href="http://bizw.co.kr/%ec%a3%bc%ec%9a%94%ec%82%ac%ec%97%85/"
+                          >사업실적</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    id="menu-item-49"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49 dropdown"
+                  >
+                    <a
+                      title="BUSINESS"
+                      href="http://bizw.co.kr/#"
+                      data-toggle="dropdown"
+                      class="dropdown-toggle"
+                      aria-haspopup="true"
+                      >BUSINESS <span class="caret"></span
+                    ></a>
+                    <ul role="menu" class="dropdown-menu">
+                      <li
+                        id="menu-item-272"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"
+                      >
+                        <a
+                          title="SW 교육"
+                          href="http://bizw.co.kr/sw-%ea%b5%90%ec%9c%a1/"
+                          >SW 교육</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-269"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"
+                      >
+                        <a
+                          title="HR 인재양성"
+                          href="http://bizw.co.kr/hr-%ec%9d%b8%ec%9e%ac%ec%96%91%ec%84%b1/"
+                          >HR 인재양성</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-271"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"
+                      >
+                        <a
+                          title="해외BM"
+                          href="http://bizw.co.kr/%ed%95%b4%ec%99%b8bm/"
+                          >해외BM</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-270"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"
+                      >
+                        <a
+                          title="시장개척단"
+                          href="http://bizw.co.kr/%ec%8b%9c%ec%9e%a5%ea%b0%9c%ec%b2%99%eb%8b%a8/"
+                          >시장개척단</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    id="menu-item-40"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"
+                  >
+                    <a title="PORTFOLIO" href="http://bizw.co.kr/portfolio/"
+                      >PORTFOLIO</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-38"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"
+                  >
+                    <a title="CONTACT US" href="http://bizw.co.kr/contact-us/"
+                      >CONTACT US</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #navbar End !-->
+      </div>
+      <!-- #hpt_nav_inner End !-->
+    </div>
+    <!-- #hpt_nav_conti End !-->
+    <!-- #Hptheme Menu_bar End !-->
+
+    <div id="hpt_body_conti" class="row">
+      <p>내용</p>
+    </div>
+    <!-- #hpt_body_conti End !-->
+
+    <div id="hpt_bottom_conti">
+      <!-- #hpt_bottom_conti Start -->
+      <div class="hpt_bottom_inner">
+        <!-- #hpt_bottom_inner Start !-->
+        <div class="hpt_bottom1">
+          <ul class="hpt_bot_company">
+            <li class="b_logo">
+              <a href="http://bizw.co.kr/" title="(주)비즈웨어코리아"
+                ><img src="./nav-files/toplogo_ft.png" alt="(주)비즈웨어"
+              /></a>
+            </li>
+            <li class="b_company">
+              <ul class="add_box">
+                &nbsp;
+                <li class="c_address">
+                  광주광역시 서구 상무화원로 32번길 24, 701호
+                </li>
+                <li class="c_tel">TEL : 02-6237-7701</li>
+                <li class="c_tel">FAX : 02-6237-7705</li>
+                <li class="c_fax">
+                  Email : <a href="mailto:dir@bizw.co.kr">dir@bizw.co.kr</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- #hpt_bottom_conti End -->
+  </body>
+</html>
